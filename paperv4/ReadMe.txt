@@ -32,6 +32,7 @@ Scripts are located in 'paper_v4' folder
 In main scripts, two paths are required:
     - PARLA_addons_folder: the addons folder with custom functions
     - PARLA_data_folder: root path of data
+    - SimppleTracker_folder: simpletracker folder
 
 ** MAIN ULM FUNCTION **
 The two main function of superresolution process are
