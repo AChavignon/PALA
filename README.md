@@ -1,7 +1,8 @@
 # PALA for Open Platorm for Ultrasound Localization Microscopy
-
-Private git to share srcipts and functions for OPUS-PALA article from Olivier Couture's team at LIB (Paris, France).
-All functions are usable with agreement from their owner.
+<p align="center">
+<img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" width="400">
+</p>
+Respositroy to share scripts and functions for OPUS-PALA article. All functions are usable with agreement from their owner.
 
 ###### DATE 2020.12.17 - VERSION 1.1
 __AUTHORS: Arthur Chavignon, Baptiste Heiles, Vincent Hingot. CNRS, Sorbonne Universite, INSERM.__  
