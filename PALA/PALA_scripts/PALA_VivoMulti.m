@@ -83,7 +83,7 @@ lz = PData.Origin(3) + [0:PData.Size(1)-1].*PData.PDelta(3);
 listAlgo = {'no_shift','wa','interp_cubic','interp_lanczos','interp_spline','gaussian_fit','radial'};
 Nalgo = numel(listAlgo);
 %% select SVD filtering Noise
-hhh=19;
+hhh=min(Nbuffers,19);
 load([IQfiles(hhh).folder filesep IQfiles(hhh).name],'IQ');
 IQ_filt = SVDfilter(IQ,ULM.SVD_cutoff);
 IQ_filt = filter(but_b,but_a,IQ_filt,[],3);

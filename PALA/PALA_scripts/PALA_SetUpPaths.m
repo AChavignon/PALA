@@ -16,11 +16,11 @@ clear all;close('all')
 
 % DEFINE THE ADDONS DIRECTORY ON YOUR COMPUTER
 
-PALA_addons_folder = 'F:\ArthurC\CHAPRO_local\_SIMULATIONS\FightClub_PostPro\PALA_addons'; % location of the addons folder
+PALA_addons_folder = 'D:\PALA_test\PALA'; % location of the addons folder
 
 % DEFINE THE DATA DIRECTORY ON YOUR COMPUTER
 
-PALA_data_folder = 'F:\ArthurC\Data\Fight_Club\PALA_Data';
+PALA_data_folder = 'D:\PALA_test\';
 
 addpath(genpath(PALA_addons_folder))
 

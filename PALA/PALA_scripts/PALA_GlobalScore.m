@@ -18,7 +18,7 @@ run('PALA_SetUpPaths.m')
 workingdir_flow = [PALA_data_folder '\PALA_data_InSilicoFlow'];
 load([workingdir_flow '\PALA_InSilicoFlow_scores.mat'])
 
-workingdir_vivo = [PALA_data_folder '\PALA_data_InVivoBrain'];
+workingdir_vivo = [PALA_data_folder '\PALA_data_InVivoRatBrain'];
 load([workingdir_vivo '\PALA_InVivoRatBrain_scores.mat'])
 
 workingdir_psf = [PALA_data_folder '\PALA_data_InSilicoPSF'];
@@ -103,3 +103,4 @@ uit.ColumnName = ListAlgoName;uit.RowName = coltitle;
 
 figname = 'GlobalScore_values';
 save([workingdir_results filesep figname],'Data','coltitle','ListAlgoName','Weight_coef')
+fprintf('PALA_GlobalScore.m completed.\n');
