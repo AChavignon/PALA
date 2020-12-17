@@ -1,0 +1,299 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Test script for the Simple Tracker function</title><meta name="generator" content="MATLAB 7.14"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2012-08-18"><meta name="DC.source" content="TestSimpleTracker.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+
+  </style></head><body><div class="content"><h1>Test script for the Simple Tracker function</h1><!--introduction--><p>This script aims at demonstrating the capabilities and the syntax of simpletracker.m, a MATLAB function dedicated to tracking.</p><p><b>Tracking</b> , or particle linking, consist in re-building the trajectories of one or several particles as they move along time. Their position is reported at each frame, but their identiy is yet unknown: we do not know what particle in one frame corresponding to a particle in the previous frame. Tracking algorithms aim at providing a solution for this problem.</p><p><tt>simpletracker.m</tt> is - as the name says - a simple implementation of a tracking algorithm, that can deal with gaps. A gap happens when one particle that was detected in one frame is not detected in the subsequent one. If not dealt with, this generates a track break, or a gap, in the frame where the particule disappear, and a false new track in the frame where it re-appear.</p><p><tt>simpletracker</tt> first do a frame-to-frame linking step, where links are first created between each frame pair, using the hungarian algorithm of <tt>hungarianlinker</tt>. Then a second iteration is done through the data, investigating track ends. If a track beginning is found close to a track end in a subsequent track, a link spanning multiple frame can be created, bridging the gap and restoring the track.</p><p>This scripts generate random points that more or less follow a given trajectories. They are scrambled, their position is perturbed by noise, and some of them are randomly erased in some frames. This is the first and longer part in the script</p><p>In a second time, the tracker tries to rebuild the tracks. This is made just by calling <tt>simpletracker</tt> with sensible parameters.</p><p>The third part is only about displaying results. The points are drawn with a text label next to them indicating to which frame they belong. Track are drawn in color.</p><p>More information can be found in the help section of the <tt>simpletracker</tt> and of the functions it calls, namely <tt>hungarianlinker</tt> and <tt>nearestneighborlinker</tt>.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Problem parameters</a></li><li><a href="#2">Create the random points</a></li><li><a href="#3">Plot the random points</a></li><li><a href="#4">Track them</a></li><li><a href="#5">Plot tracks</a></li></ul></div><h2>Problem parameters<a name="1"></a></h2><pre class="codeinput"><span class="comment">% Dimensionality of the simulated problem (2 for 2D, 3 for 3D)</span>
+n_dim = 2;
+
+<span class="comment">% Number of rames to track the points over</span>
+n_frames = 20;
+
+<span class="comment">% Aproximative number of points per frame</span>
+n_points_per_frame = 10;
+</pre><h2>Create the random points<a name="2"></a></h2><pre class="codeinput">points = cell(n_frames, 1);
+
+<span class="comment">% Random start position</span>
+start = 20 * rand(n_points_per_frame, n_dim);
+
+<span class="comment">% Span initial direction</span>
+theta = linspace(0, 2* pi/4, n_points_per_frame)';
+vec = [ cos(theta) sin(theta) ];
+
+<span class="comment">% Random direction change</span>
+theta_increase = pi / n_frames * rand(n_points_per_frame, 1);
+
+<span class="keyword">for</span> i_frame = 1 : n_frames
+
+    <span class="comment">% Disperse points as if their position was increasing by 1.5 in average</span>
+    <span class="comment">% each frame.</span>
+    frame_points = start + vec .* i_frame .* [cos(theta_increase * i_frame) sin(theta_increase * i_frame) ] + rand(n_points_per_frame, n_dim) ;
+
+    <span class="comment">% Randomize them;</span>
+    randomizer = rand(n_points_per_frame, 1);
+    [ sorted index ] = sort(randomizer);
+    frame_points = frame_points(index, :);
+
+    <span class="comment">% Delete some of them, possible</span>
+    deleter = randn;
+    <span class="keyword">while</span> (deleter &gt; 0);
+        frame_points(1, :) = [];
+        deleter = deleter - 1;
+    <span class="keyword">end</span>
+
+    points{i_frame} = frame_points;
+
+<span class="keyword">end</span>
+</pre><h2>Plot the random points<a name="3"></a></h2><p>We plot a 'x' at each point location, and an index of the frame they are in next to the mark.</p><pre class="codeinput">figure(1)
+clf
+hold <span class="string">on</span>
+<span class="keyword">for</span> i_frame = 1 : n_frames
+
+    str = num2str(i_frame);
+    <span class="keyword">for</span> j_point = 1 : size(points{i_frame}, 1)
+        pos = points{i_frame}(j_point, :);
+        plot(pos(1), pos(2), <span class="string">'x'</span>)
+        text(<span class="string">'Position'</span>, pos, <span class="string">'String'</span>, str)
+    <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="TestSimpleTracker_01.png" alt=""> <h2>Track them<a name="4"></a></h2><p>Finally! A one liner. We add some information to the output, and allow gap closing to happen all the way through.</p><pre class="codeinput">max_linking_distance = 4;
+max_gap_closing = Inf;
+debug = true;
+
+[ tracks adjacency_tracks ] = simpletracker(points,<span class="keyword">...</span>
+    <span class="string">'MaxLinkingDistance'</span>, max_linking_distance, <span class="keyword">...</span>
+    <span class="string">'MaxGapClosing'</span>, max_gap_closing, <span class="keyword">...</span>
+    <span class="string">'Debug'</span>, debug);
+</pre><pre class="codeoutput">Frame to frame linking using Hungarian method.
+019/019
+Creating 172 links over a total of 189 points.
+Done.
+Gap-closing:
+Creating a link between point 3 of frame 2 and point 7 of frame 4.
+Creating a link between point 9 of frame 3 and point 5 of frame 5.
+Creating a link between point 2 of frame 4 and point 5 of frame 7.
+Creating a link between point 5 of frame 8 and point 1 of frame 10.
+Creating a link between point 2 of frame 9 and point 3 of frame 11.
+Creating a link between point 5 of frame 9 and point 8 of frame 11.
+Creating a link between point 9 of frame 12 and point 4 of frame 14.
+Done.
+Building tracks:
+</pre><h2>Plot tracks<a name="5"></a></h2><p>We want to plot eahc track in a given color. Normally we would have to retrieve the points coordinates in the given <tt>points</tt> initiall cell arrat, for each point in frame. To skip this, we simple use the adjacency_tracks, that can pick points directly in the concatenated points array <tt>all_points</tt>.</p><pre class="codeinput">n_tracks = numel(tracks);
+colors = hsv(n_tracks);
+
+all_points = vertcat(points{:});
+
+<span class="keyword">for</span> i_track = 1 : n_tracks
+
+    <span class="comment">% We use the adjacency tracks to retrieve the points coordinates. It</span>
+    <span class="comment">% saves us a loop.</span>
+
+    track = adjacency_tracks{i_track};
+    track_points = all_points(track, :);
+
+    plot(track_points(:,1), track_points(:, 2), <span class="string">'Color'</span>, colors(i_track, :))
+
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="TestSimpleTracker_02.png" alt=""> <p>Jean-Yves Tinevez <a href="jeanyves.tinevez@gmail.com">jeanyves.tinevez@gmail.com</a> November 2011 - May 2012</p><p class="footer"><br>
+      Published with MATLAB&reg; 7.14<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Test script for the Simple Tracker function
+%
+% This script aims at demonstrating the capabilities and the syntax of
+% simpletracker.m, a MATLAB function dedicated to tracking. 
+%
+% *Tracking* , or particle linking, consist in re-building the trajectories
+% of one or several particles as they move along time. Their position is
+% reported at each frame, but their identiy is yet unknown: we do not know
+% what particle in one frame corresponding to a particle in the previous
+% frame. Tracking algorithms aim at providing a solution for this problem.
+%
+% |simpletracker.m| is - as the name says - a simple implementation of a
+% tracking algorithm, that can deal with gaps. A gap happens when one
+% particle that was detected in one frame is not detected in the subsequent
+% one. If not dealt with, this generates a track break, or a gap, in the
+% frame where the particule disappear, and a false new track in the frame
+% where it re-appear.
+%
+% |simpletracker| first do a frame-to-frame linking step, where links are
+% first created between each frame pair, using the hungarian algorithm of
+% |hungarianlinker|. Then a second iteration is done through the data,
+% investigating track ends. If a track beginning is found close to a track
+% end in a subsequent track, a link spanning multiple frame can be created,
+% bridging the gap and restoring the track.
+%
+% This scripts generate random points that more or less follow a given
+% trajectories. They are scrambled, their position is perturbed by noise,
+% and some of them are randomly erased in some frames. This is the first
+% and longer part in the script
+%
+% In a second time, the tracker tries to rebuild the tracks. This is made
+% just by calling |simpletracker| with sensible parameters.
+% 
+% The third part is only about displaying results. The points are drawn
+% with a text label next to them indicating to which frame they belong.
+% Track are drawn in color.
+% 
+% More information can be found in the help section of the |simpletracker|
+% and of the functions it calls, namely |hungarianlinker| and
+% |nearestneighborlinker|.
+% 
+%% Problem parameters
+
+% Dimensionality of the simulated problem (2 for 2D, 3 for 3D)
+n_dim = 2;
+
+% Number of rames to track the points over
+n_frames = 20;
+
+% Aproximative number of points per frame
+n_points_per_frame = 10; 
+
+%% Create the random points
+points = cell(n_frames, 1);
+
+% Random start position
+start = 20 * rand(n_points_per_frame, n_dim);
+
+% Span initial direction
+theta = linspace(0, 2* pi/4, n_points_per_frame)';
+vec = [ cos(theta) sin(theta) ];
+
+% Random direction change
+theta_increase = pi / n_frames * rand(n_points_per_frame, 1);
+
+for i_frame = 1 : n_frames 
+   
+    % Disperse points as if their position was increasing by 1.5 in average
+    % each frame.
+    frame_points = start + vec .* i_frame .* [cos(theta_increase * i_frame) sin(theta_increase * i_frame) ] + rand(n_points_per_frame, n_dim) ;
+    
+    % Randomize them;
+    randomizer = rand(n_points_per_frame, 1);
+    [ sorted index ] = sort(randomizer);
+    frame_points = frame_points(index, :);
+    
+    % Delete some of them, possible
+    deleter = randn;
+    while (deleter > 0);
+        frame_points(1, :) = [];
+        deleter = deleter - 1;
+    end
+    
+    points{i_frame} = frame_points;
+    
+end
+
+%% Plot the random points
+% We plot a 'x' at each point location, and an index of the frame they are
+% in next to the mark.
+
+figure(1)
+clf
+hold on
+for i_frame = 1 : n_frames
+   
+    str = num2str(i_frame);
+    for j_point = 1 : size(points{i_frame}, 1)
+        pos = points{i_frame}(j_point, :);
+        plot(pos(1), pos(2), 'x')
+        text('Position', pos, 'String', str)
+    end
+    
+end
+
+%% Track them
+% Finally! A one liner. We add some information to the output, and allow
+% gap closing to happen all the way through.
+
+max_linking_distance = 4;
+max_gap_closing = Inf;
+debug = true;
+
+[ tracks adjacency_tracks ] = simpletracker(points,...
+    'MaxLinkingDistance', max_linking_distance, ...
+    'MaxGapClosing', max_gap_closing, ...
+    'Debug', debug);
+
+%% Plot tracks
+% We want to plot eahc track in a given color. Normally we would have to
+% retrieve the points coordinates in the given |points| initiall cell
+% arrat, for each point in frame. To skip this, we simple use the
+% adjacency_tracks, that can pick points directly in the concatenated
+% points array |all_points|.
+
+n_tracks = numel(tracks);
+colors = hsv(n_tracks);
+
+all_points = vertcat(points{:});
+
+for i_track = 1 : n_tracks
+   
+    % We use the adjacency tracks to retrieve the points coordinates. It
+    % saves us a loop.
+    
+    track = adjacency_tracks{i_track};
+    track_points = all_points(track, :);
+    
+    plot(track_points(:,1), track_points(:, 2), 'Color', colors(i_track, :))
+    
+end
+
+%% 
+% Jean-Yves Tinevez <jeanyves.tinevez@gmail.com> November 2011 - May 2012
+
+##### SOURCE END #####
+--></body></html>
