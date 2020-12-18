@@ -1,4 +1,8 @@
 # LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS"
+<p align="center">
+<img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" width="300">
+</p>
+
 ###### DATE 2020.12.17-VERSION 1.1
 **AUTHORS: Baptiste Heiles, Arthur Chavignon, CNRS, Sorbonne Universite, INSERM.**
 Directed by: Olivier Couture, Research Director CNRS, Sorbonne Universite, INSERM
