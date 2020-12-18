@@ -1,6 +1,6 @@
 # LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS"
 ###### DATE 2020.12.17-VERSION 1.1
-**AUTHORS: Baptiste HeilesArthur Chavignon, CNRS, Sorbonne Universite, INSERM.**
+**AUTHORS: Baptiste Heiles, Arthur Chavignon, CNRS, Sorbonne Universite, INSERM.**
 Directed by: Olivier Couture, Research Director CNRS, Sorbonne Universite, INSERM
 Laboratoire d'Imagerie Biomedicale, Team PPM. 15 rue de l'Ecole de Medecine, 75006, Paris
 Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)
