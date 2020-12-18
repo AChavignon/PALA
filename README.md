@@ -2,7 +2,7 @@
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" width="400">
 </p>
-Respositroy to share scripts and functions for OPUS-PALA article. All functions are usable with agreement from their owner.
+Repository to share scripts and functions for OPUS-PALA article. All functions are usable with agreement from their owner.
 
 ###### DATE 2020.12.17 - VERSION 1.1
 __AUTHORS: Arthur Chavignon, Baptiste Heiles, Vincent Hingot. CNRS, Sorbonne Universite, INSERM.__  
@@ -12,7 +12,7 @@ Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 I
 Partly funded by the European Research Council under the European Union Horizon H2020 programme/ERC Consolidator grant agreement No 772786-ResolveStroke
 
 #### CORRESPONDING AUTHORS
-Article: Baptiste Heiles, baptiste.heiles@gmail.com  
+Article, GUI LOTUS: Baptiste Heiles, baptiste.heiles@gmail.com  
 Materials, scripts, and codes: Arthur Chavignon, arthur.chavignon.pro@gmail.com  
 Collaborations, rights and others: Olivier Couture, olivier.couture@sorbonne-universite.fr  
 
