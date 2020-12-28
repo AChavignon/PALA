@@ -1,4 +1,6 @@
 # LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS"
+![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
+
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" width="400">
 </p>
