@@ -3,13 +3,13 @@
 <img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="200">
   <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" height="200">
 </p>
-Repository to share scripts and functions for OPUS-PALA article, and LOTUS Software.  All functions are usable with agreement from their owner.
+Repository to share scripts and functions for OPUS-PALA article, and LOTUS Software.  All functions are usable with agreement from their owner. [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)]   
 
 ###### DATE 2020.12.17 - VERSION 1.1
 __AUTHORS: Arthur Chavignon, Baptiste Heiles, Vincent Hingot. CNRS, Sorbonne Universite, INSERM.__  
 Directed by: Olivier Couture, Research Director CNRS, Sorbonne Université, INSERM  
 Laboratoire d'Imagerie Biomedicale, Team PPM. 15 rue de l'Ecole de Medecine, 75006, Paris  
-Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)  
 Partly funded by the European Research Council under the European Union Horizon H2020 programme/ERC Consolidator grant agreement No 772786-ResolveStroke
 
 #### CORRESPONDING AUTHORS
