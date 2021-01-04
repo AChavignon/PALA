@@ -34,3 +34,4 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 by BH, AC, VH, PL, ET, OC
+[![HitCount](http://hits.dwyl.com/AChavignon/PALA.svg)](http://hits.dwyl.com/AChavignon/PALA)
