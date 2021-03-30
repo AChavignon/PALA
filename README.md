@@ -1,4 +1,6 @@
 # PALA for Open Platorm for Ultrasound Localization Microscopy
+![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
+
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="200">
   <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" height="200">
@@ -9,7 +11,7 @@ Repository to share scripts and functions for OPUS-PALA article, and LOTUS Softw
 __AUTHORS: Arthur Chavignon, Baptiste Heiles, Vincent Hingot. CNRS, Sorbonne Universite, INSERM.__  
 Directed by: Olivier Couture, Research Director CNRS, Sorbonne Université, INSERM  
 Laboratoire d'Imagerie Biomedicale, Team PPM. 15 rue de l'Ecole de Medecine, 75006, Paris  
-Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)  
 Partly funded by the European Research Council under the European Union Horizon H2020 programme/ERC Consolidator grant agreement No 772786-ResolveStroke
 
 #### CORRESPONDING AUTHORS
@@ -31,4 +33,5 @@ OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABIL
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-by BH, AC, VH, PL, ET, OC
+by BH, AC, VH, PL, ET, OC  
+[![HitCount](http://hits.dwyl.com/AChavignon/PALA.svg)](http://hits.dwyl.com/AChavignon/PALA)
