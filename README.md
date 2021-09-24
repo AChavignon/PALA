@@ -2,8 +2,8 @@
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 
 <p align="center">
-<img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="200">
-  <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" height="200">
+<img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="300">
+  <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" height="300">
 </p>
 Repository to share scripts and functions for OPUS-PALA article, and LOTUS Software.  All functions are usable with agreement from their owner.
 
@@ -20,9 +20,10 @@ Materials, scripts, and codes: Arthur Chavignon, arthur.chavignon.pro@gmail.com
 Collaborations, rights and others: Olivier Couture, olivier.couture@sorbonne-universite.fr  
 
 #### ACADEMIC REFERENCES TO BE CITED
-Details of the code published in 2020 article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
-Open Platform for Ultrasound Localization Microscopy: performance assessment of localization algorithms  
-General description of super-resolution in: Couture et al., Ultrasound localization microscopy and super-resolution: A state of the art, IEEE UFFC 2018
+Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
+*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*, Nature Biomedical Engineering, 2021, in press.
+
+General description of super-resolution in: Couture et al., *Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018.
 
 #### DISCLAIMER
 THIS SOFTWARE IS PROVIDED BY THE AUTHORS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
@@ -34,4 +35,3 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 by BH, AC, VH, PL, ET, OC  
-[![HitCount](http://hits.dwyl.com/AChavignon/PALA.svg)](http://hits.dwyl.com/AChavignon/PALA)
