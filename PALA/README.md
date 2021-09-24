@@ -10,9 +10,10 @@ Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 I
 Partly funded by the European Research Council under the European Union Horizon H2020 programme/ERC Consolidator grant agreement No 772786-ResolveStroke
 
 #### ACADEMIC REFERENCES TO BE CITED
-Details of the code published in 2020 article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.
-Open Platform for Ultrasound Localization Microscopy: performance assessment of localization algorithms
-General description of super-resolution in: Couture et al., Ultrasound localization microscopy and super-resolution: A state of the art, IEEE UFFC 2018
+Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
+*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*, Nature Biomedical Engineering, 2021, in press.
+
+General description of super-resolution in: Couture et al., *Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018.
 
 #### CORRESPONDING AUTHORS
 - Article: Baptiste Heiles (baptiste.heiles@gmail.com)
