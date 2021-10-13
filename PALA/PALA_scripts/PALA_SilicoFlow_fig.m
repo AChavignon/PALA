@@ -8,8 +8,8 @@
 % Laboratoire d'Imagerie Biomedicale, Team PPM. 15 rue de l'Ecole de Medecine, 75006, Paris
 % Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)
 % ACADEMIC REFERENCES TO BE CITED
-% Details of the code published in 2020 article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.
-% Open Platform for Ultrasound Localization Microscopy: performance assessment of localization algorithms
+% Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
+% Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy, Nature Biomedical Engineering, 2021.
 % General description of super-resolution in: Couture et al., Ultrasound localization microscopy and super-resolution: A state of the art, IEEE UFFC 2018
 
 run('PALA_SetUpPaths.m')
@@ -171,8 +171,8 @@ for ii= 1:numel(listAlgo)
     if ii ==1,text(-.55,mean(ylim),'Axial error','FontSize',labelSize,'VerticalAlignment','middle','HorizontalAlignment','center','Rotation',90);end
 end
 figname = 'fig3_distrib_30dB';
-print(fig43,[myfilepath_fig figname],'-dpng','-r300');% Save fig
-print(fig43,[myfilepath_fig figname '.eps'],'-depsc2','-tiff','-r300','-painters')
+% print(fig43,[myfilepath_fig figname],'-dpng','-r300');% Save fig
+% print(fig43,[myfilepath_fig figname '.eps'],'-depsc2','-tiff','-r300','-painters')
 
 %%
 % ErrMean_x_interp = mean([ErrList{3}(:,3);ErrList{4}(:,3);ErrList{5}(:,3)]);

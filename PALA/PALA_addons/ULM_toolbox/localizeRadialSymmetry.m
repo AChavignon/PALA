@@ -10,8 +10,8 @@ function [zc,xc] = localizeRadialSymmetry(I,fwhmz,fwhmx)
 % Laboratoire d'Imagerie Biomedicale, Team PPM. 15 rue de l'Ecole de Medecine, 75006, Paris
 % Code Available under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (see https://creativecommons.org/licenses/by-nc-sa/4.0/)
 % ACADEMIC REFERENCES TO BE CITED
-% Details of the code published in 2020 article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.
-% Open Platform for Ultrasound Localization Microscopy: performance assessment of localization algorithms
+% Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
+% Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy, Nature Biomedical Engineering, 2021.
 % General description of super-resolution in: Couture et al., Ultrasound localization microscopy and super-resolution: A state of the art, IEEE UFFC 2018
 %
 % Calculates the center of a 2D intensity distribution.
