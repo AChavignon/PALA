@@ -23,9 +23,9 @@ Collaborations, rights and others: Olivier Couture, olivier.couture@sorbonne-uni
 
 #### ACADEMIC REFERENCES TO BE CITED
 Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
-[*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*](https://www.nature.com/articles/s41551-021-00824-8), Nature Biomedical Engineering, 2022,  [10.1038/s41551-021-00824-8](https://doi.org/10.1038/s41551-021-00824-8).
+[*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*, Nature Biomedical Engineering, 2022 (10.1038/s41551-021-00824-8)](https://www.nature.com/articles/s41551-021-00824-8).
 
-General description of super-resolution in: Couture et al., *Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018.
+General description of super-resolution in: Couture et al., [*Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018](https://doi.org/10.1109/TUFFC.2018.2850811).
 
 #### RELATED DATASET
 Simulated and in vivo datasets are available at https://doi.org/10.5281/zenodo.4343435.
