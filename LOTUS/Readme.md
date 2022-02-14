@@ -1,5 +1,7 @@
-# LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS"
+### LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS"
+[![Generic badge](https://img.shields.io/badge/NBME-10.1038/s41551021008248-red.svg)](https://doi.org/10.1038/s41551-021-00824-8)
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4343435.svg)](https://doi.org/10.5281/zenodo.4343435)
 
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" width="400">
@@ -15,9 +17,9 @@ Partly funded by the European Research Council under the European Union Horizon 
 
 #### ACADEMIC REFERENCES TO BE CITED
 Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
-*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*, Nature Biomedical Engineering, 2021, in press.
+[*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*, Nature Biomedical Engineering, 2022 (10.1038/s41551-021-00824-8)](https://www.nature.com/articles/s41551-021-00824-8).
 
-General description of super-resolution in: Couture et al., Ultrasound localization microscopy and super-resolution: A state of the art, IEEE UFFC 2018
+General description of super-resolution in: Couture et al., [*Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018](https://doi.org/10.1109/TUFFC.2018.2850811).
 
 #### CORRESPONDING AUTHORS
 - Article: Baptiste Heiles (baptiste.heiles@gmail.com)
