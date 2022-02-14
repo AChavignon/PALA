@@ -28,7 +28,7 @@ Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston a
 General description of super-resolution in: Couture et al., *Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018.
 
 #### RELATED DATASET
-Simulated and in vivo datasets are available on https://doi.org/10.5281/zenodo.4343435.
+Simulated and in vivo datasets are available at https://doi.org/10.5281/zenodo.4343435.
 
 #### DISCLAIMER
 THIS SOFTWARE IS PROVIDED BY THE AUTHORS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
