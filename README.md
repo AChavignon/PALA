@@ -1,5 +1,7 @@
 # PALA for Open Platorm for Ultrasound Localization Microscopy
+[![Generic badge](https://img.shields.io/badge/NBME-10.1038/s41551021008248-red.svg)](https://doi.org/10.1038/s41551-021-00824-8)
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4343435.svg)](https://doi.org/10.5281/zenodo.4343435)
 
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="300">
@@ -24,6 +26,9 @@ Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston a
 [*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*](https://www.nature.com/articles/s41551-021-00824-8), Nature Biomedical Engineering, 2022,  [10.1038/s41551-021-00824-8](https://doi.org/10.1038/s41551-021-00824-8).
 
 General description of super-resolution in: Couture et al., *Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018.
+
+#### RELATED DATASET
+Simulated and in vivo datasets are available on https://doi.org/10.5281/zenodo.4343435.
 
 #### DISCLAIMER
 THIS SOFTWARE IS PROVIDED BY THE AUTHORS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
