@@ -13,9 +13,9 @@ Partly funded by the European Research Council under the European Union Horizon 
 
 #### ACADEMIC REFERENCES TO BE CITED
 Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston and Couture.  
-[*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*](https://www.nature.com/articles/s41551-021-00824-8), Nature Biomedical Engineering, 2022,  [10.1038/s41551-021-00824-8](https://doi.org/10.1038/s41551-021-00824-8).
+[*Performance benchmarking of microbubble-localization algorithms for ultrasound localization microscopy*, Nature Biomedical Engineering, 2022 (10.1038/s41551-021-00824-8)](https://www.nature.com/articles/s41551-021-00824-8).
 
-General description of super-resolution in: Couture et al., *Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018.
+General description of super-resolution in: Couture et al., [*Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018](https://doi.org/10.1109/TUFFC.2018.2850811).
 
 #### CORRESPONDING AUTHORS
 - Article: Baptiste Heiles (baptiste.heiles@gmail.com)
@@ -28,7 +28,7 @@ Ultrasound Localization Microscopy (ULM) is an ultrasound imaging technique that
 This article provides all materials and post-processing scripts and functions.
 
 #### RELATED DATASET
-Simulated and in vivo datasets are available at https://doi.org/10.5281/zenodo.4343435.
+Simulated and in vivo datasets are available on Zenodo [10.5281/zenodo.4343435](https://doi.org/10.5281/zenodo.4343435).
 
 #### 1. PATH AND LOCATIONS
 Before running scripts, two paths are required and have to be set in `PALA_SetUpPaths.m` to your computer environment:
