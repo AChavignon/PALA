@@ -5,7 +5,7 @@
 
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="300">
-  <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTS_welcome.png" height="300">
+  <img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTUS_welcome.png" height="300">
 </p>
 Repository to share scripts and functions for OPUS-PALA article, and LOTUS Software.  All functions are usable with agreement from their owner.
 
