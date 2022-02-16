@@ -32,7 +32,7 @@ Ultrasound Localization Microscopy (ULM) is an ultrasound imaging technique that
 This article provides all materials and post-processing scripts and functions.
 
 #### 1. MINIMUM REQUIREMENTS
-LOTUS software integrates MATLAB Runtime R2020b (9.9) (MathWorks). We recommend using Microsoft Windows 10 (version 1803 or higher), with 4 GB RAM minimum, and 5 GB of free space.
+LOTUS software integrates MATLAB Runtime R2021a (9.10) (MathWorks). We recommend using Microsoft Windows 10 (version 1803 or higher), with 4 GB RAM minimum, and 5 GB of free space.
 
 #### 2. INSTALLATION
 
