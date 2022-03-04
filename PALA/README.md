@@ -85,9 +85,9 @@ Your custom function must take a square image (5x5 or 7x7 pixels) centered on th
 #### 7. REQUIREMENTS
 Specific functions have been added to the toolbox but can be downloaded from MathWorks Community :
 
-- `simpletracker` : Jean-Yves Tinevez (2020). simpletracker (https://www.github.com/tinevez/simpletracker], GitHub. Retrieved April 22, 2020. (https://fr.mathworks.com/matlabcentral/fileexchange/34040-simpletracker)
-- `munkres.m`: by Yi Cao at Cranfield University on 17th June 2008 (http://csclab.murraystate.edu/bob.pilgrim/445/munkres.html] (https://fr.mathworks.com/matlabcentral/fileexchange/20328-munkres-assignment-algorithm)
-- `tight_subplot.m` : Pekka Kumpulainen (2020). `tight_subplot(Nh, Nw, gap, marg_h, marg_w)` (https://www.mathworks.com/matlabcentral/fileexchange/27991-tight_subplot-nh-nw-gap-marg_h-marg_w), MATLAB Central File Exchange. Retrieved April 23, 2020
+- `simpletracker` : Jean-Yves Tinevez (2020). simpletracker (https://www.github.com/tinevez/simpletracker, GitHub. Retrieved April 22, 2020. (or in [MATLAB Central File Exchange](https://fr.mathworks.com/matlabcentral/fileexchange/34040-simpletracker))
+- `munkres.m`: by Yi Cao at Cranfield University on 17th June 2008 (http://csclab.murraystate.edu/bob.pilgrim/445/munkres.html (or in [MATLAB Central File Exchange](https://fr.mathworks.com/matlabcentral/fileexchange/20328-munkres-assignment-algorithm))
+- `tight_subplot.m` : Pekka Kumpulainen (2020). `tight_subplot(Nh, Nw, gap, marg_h, marg_w)` in [MATLAB Central File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/27991-tight_subplot-nh-nw-gap-marg_h-marg_w). Retrieved April 23, 2020
 
 A few MATLAB toolboxes are required to run the code:
 _Communications_, _Bioinformatics_, _Image Processing_, _Curve Fitting_, _Signal Processing_, _Statistics and Machine Learning_, _Parallel Computing_, _Computer Vision Toolbox_.  
