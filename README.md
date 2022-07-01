@@ -28,7 +28,9 @@ Details of the code in the article by Heiles, Chavignon, Hingot, Lopez, Teston a
 General description of super-resolution in: Couture et al., [*Ultrasound localization microscopy and super-resolution: A state of the art*, IEEE UFFC 2018](https://doi.org/10.1109/TUFFC.2018.2850811).
 
 #### RELATED DATASET
-Simulated and in vivo datasets are available at https://doi.org/10.5281/zenodo.4343435.
+Simulated and _in vivo_ datasets are available at https://doi.org/10.5281/zenodo.4343435.
+
+For simulated dataset, raw radiofrequency data are available and can be processed with [PALA_Beamforming](https://github.com/CorazzaAlexandre/PALA_Beamforming) provided by Alexandre Corazza.
 
 #### DISCLAIMER
 THIS SOFTWARE IS PROVIDED BY THE AUTHORS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
