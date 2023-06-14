@@ -1,13 +1,13 @@
-### LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS"
+### LOTUS : An accompanying toolbox for the article "OPEN PLATFORM FOR ULTRASOUND LOCALIZATION MICROSCOPY: PERFORMANCE ASSESSMENT OF LOCALIZATION ALGORITHMS
 [![Generic badge](https://img.shields.io/badge/NBME-10.1038/s41551021008248-red.svg)](https://doi.org/10.1038/s41551-021-00824-8)
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4343435.svg)](https://doi.org/10.5281/zenodo.4343435)
 
 <p align="center">
-<img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/LOTUS_welcome.png" width="400">
+<img src="https://github.com/AChavignon/PALA/blob/master/LOTUS/splashscreen.png" width="400">
 </p>
 
-###### DATE 2022.01.31-VERSION 1.2
+###### DATE 2023.12.-VERSION 1.3
 **AUTHORS: Baptiste Heiles, Arthur Chavignon, CNRS, Sorbonne Universite, INSERM.**
 Directed by: Olivier Couture, Research Director CNRS, Sorbonne Universite, INSERM
 Laboratoire d'Imagerie Biomedicale, Team PPM. 15 rue de l'Ecole de Medecine, 75006, Paris
@@ -36,7 +36,7 @@ LOTUS software integrates MATLAB Runtime R2021a (9.10) (MathWorks). We recommend
 
 #### 2. INSTALLATION
 
-1) Launch the installer `LOTUS_v1_2_installer.exe`
+1) Launch the installer `LOTUS_v1_3.exe`
 2) Follow the installers' instructions
 3) Restart your computer
 4) LOTUS should be now available for use in the start-up menu
