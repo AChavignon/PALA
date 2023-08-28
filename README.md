@@ -2,6 +2,8 @@
 [![Generic badge](https://img.shields.io/badge/NBME-10.1038/s41551021008248-red.svg)](https://doi.org/10.1038/s41551-021-00824-8)
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4343435.svg)](https://doi.org/10.5281/zenodo.4343435)
+![GitHub All Releases](https://img.shields.io/github/downloads/lewdev/hw-gen/total)
+
 
 <p align="center">
 <img src="https://github.com/AChavignon/PALA/blob/master/fig1_matout_radial_vivo.png" height="300">
